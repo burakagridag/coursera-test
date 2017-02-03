@@ -3,8 +3,8 @@
 
   angular.module('MsgApp', [])
   .controller('MsgController', MsgController)
-  .filter('loves', LovesFilter);
-
+  .filter('loves', LovesFilter)
+  .filter('truth',TruthFilter);
   MsgController.$inject = ['$scope', 'lovesFilter'];
   function MsgController($scope, lovesFilter) {
     $scope.stateOfBeing = "hungry";
@@ -32,4 +32,12 @@
       return input;
     }
   }
+  function TruthFilter() {
+    return function (input, target, replace) {
+      input = input || "";
+      input = input.replace(target, replace);
+      return input;
+    }
+  }
+
 })();

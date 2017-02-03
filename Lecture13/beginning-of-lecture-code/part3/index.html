@@ -11,7 +11,9 @@
   <h1>Custom Filters</h1>
   <div ng-controller='MsgController'>
     Original: {{sayMessage()}} <br>
-    Loves : {{ sayLovesMessage() }}
+    Loves : {{ sayLovesMessage() }} <br>
+    Truth : {{ sayLovesMessage() | truth : 'healthy' : 'cookies'}} <br>
+    {{'big truth'|uppercase}} : {{ sayLovesMessage() | truth : 'healthy' : 'cookies' | uppercase}} 
     <div>
       <button ng-click="feedYaakov()">Feed Yaakov</button>
       <br>

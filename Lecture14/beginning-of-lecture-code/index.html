@@ -10,10 +10,12 @@
   <body>
     <h1>The Digest Cycle</h1>
     <div ng-controller='CounterController'>
-      <button ng-click="showNumberOfWatchers()">
-        Log # of Watchers</button>
+      <button ng-click="showNumberOfWatchers()">Log # of Watchers</button>
+        <button ng-click="countOnce()">Up Once Counter (once)</button>
+        <button ng-click="upCounter()">Up Counter</button>
       <div>
-
+        Once Counter {{onceCounter}}<br>
+        Regular Counter {{counter}}
       </div>
     </div>
   </body>

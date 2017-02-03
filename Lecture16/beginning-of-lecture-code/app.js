@@ -7,6 +7,7 @@ angular.module('BindingApp', [])
 BindingController.$inject = ['$scope'];
 function BindingController($scope) {
   $scope.firstName = "Yaakov";
+  $scope.fullName = "";
 
   $scope.showNumberOfWatchers = function () {
     console.log("# of Watchers: ", $scope.$$watchersCount);
