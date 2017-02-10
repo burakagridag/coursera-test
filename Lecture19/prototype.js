@@ -37,13 +37,13 @@
 //** Function constructors
 // See my other course: HTML, CSS, and Javascript for Web Developers
 // Lecture #48
-// function Dog(name) {
-//   this.name = name;
-//   console.log("'this' is: ", this);
-// }
-//
-// var myDog = new Dog("Max");
-// console.log("myDog: ", myDog);
-//
-// // Not being used as a function constructor
-// Dog("Max2");
+function Dog(name) {
+  this.name = name;
+  console.log("'this' is: ", this);
+}
+
+var myDog = new Dog("Max");
+console.log("myDog: ", myDog);
+
+// Not being used as a function constructor
+Dog("Max2");
