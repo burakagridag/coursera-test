@@ -1,0 +1,14 @@
+1- Atom.io sitesinden atom indirmek
+2- download git - git --version
+3- nodejs yükle - node --version
+4- npm install -g browser-sync
+browsser açmak için 
+browser-sync start --server --directory --files "**/*"
+
+git status
+git add .
+git status
+git commit -m "first web file"
+git push
+
+https://javascript-minifier.com
